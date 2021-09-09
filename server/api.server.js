@@ -60,3 +60,18 @@ app.get("/", function(req, res) {
   );
   res.send(html);
 })
+
+const contact=[
+  {
+    name: 'Radhika',
+    phone: '9898989898'
+  },
+  {
+    name: 'Vaishnavi',
+    phone: '7878787878'
+  }
+]
+
+app.get('/content', (req, res)=>{
+  res.json(contact)
+})
