@@ -5,12 +5,12 @@ function createResponseCache() {
     return new Map();
 }
 
-export function useRefresh() {
-    const refreshCache = unstable_useCacheRefresh();
-    return function refresh(key, seededResponse) {
-        refreshCache(createResponseCache, new Map([[key, seededResponse]]));
-    };
-}
+// export function useRefresh() {
+//     const refreshCache = unstable_useCacheRefresh();
+//     return function refresh(key, seededResponse) {
+//         refreshCache(createResponseCache, new Map([[key, seededResponse]]));
+//     };
+// }
 
 export function useServerResponse(location) {
     const key = JSON.stringify(location);
@@ -19,7 +19,7 @@ export function useServerResponse(location) {
     if (response) {
         return response;
     }
-    response = createFromFetch(
+     response = createFromFetch(
         fetch('/react?location=' + encodeURIComponent(key))
     );
     cache.set(key, response);

@@ -13,7 +13,9 @@ export default function Root() {
 
 function Content() {
     const [location, setLocation] = useState({
-        selectedId: null
+        selectedId: null,
+        page: 'home',
+        pageNo: 1
     });
     const response = useServerResponse(location);
     return (

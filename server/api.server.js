@@ -35,7 +35,7 @@ async function renderReactTree(res, props) {
     'utf8'
   );
   const moduleMap = JSON.parse(manifest);
-  pipeToNodeWritable(React.createElement(ReactApp), res, moduleMap);
+  pipeToNodeWritable(React.createElement(ReactApp,props), res, moduleMap);
 }
 
 function sendResponse(req, res, redirectToId) {
@@ -45,7 +45,9 @@ function sendResponse(req, res, redirectToId) {
   }
   res.set('X-Location', JSON.stringify(location));
   renderReactTree(res, {
-    selectedId: location.selectedId
+    selectedId: location.selectedId,
+    page: location.page,
+    pageNo: location.pageNo
   });
 }
 
@@ -60,6 +62,46 @@ app.get("/", function(req, res) {
   );
   res.send(html);
 })
+
+
+app.get("/api/home", (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../', 'home_page.json'));
+});
+
+app.get("/api/product", (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../', 'product_page.json'));
+});
+
+
+app.get('/api/:page/:pgno', (req,res) => {
+  const pgno = req.params.pgno;
+  const page = req.params.page;
+  const wcount = (page === 'home'? 4: 2);
+  const data = readFileSync(
+    path.resolve(__dirname, `../${page}_page.json`),
+    'utf8'
+  );
+  
+    let slots = [];
+    const temp = JSON.parse(data);
+    const slotsFromJson = temp['RESPONSE']['slots'];
+    let priceData = {};
+    if(temp['RESPONSE']['pageData'])priceData = temp['RESPONSE']['pageData']['pageContext'];
+    const start = (pgno-1)*wcount;
+    const end = Math.min(start+wcount,slotsFromJson.length)-1;
+    const hasMorePages = (end < slotsFromJson.length-1);
+    for (let i = start; i <= end; i++) {
+      slots.push(slotsFromJson[i]);
+    }
+    const pageResponse = {
+      "slots":slots,
+      "priceData":priceData,
+      "pageNumber":pgno,
+      "hasMorePages":hasMorePages
+    }
+    // console.log(pageData);
+    res.send(pageResponse);
+}); 
 
 const contact=[
   {

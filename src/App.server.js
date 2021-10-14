@@ -1,8 +1,8 @@
 import React from 'react'
 import {fetch} from 'react-fetch'
 
-function App() {
-    const data = fetch('http://localhost:4000/content').json()
+function App(props) {
+    const data = fetch(`http://localhost:4000/api/${props.page}/${props.pageNo}`).json()
 
     return (
         <div>
