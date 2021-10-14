@@ -103,17 +103,7 @@ app.get('/api/:page/:pgno', (req,res) => {
     res.send(pageResponse);
 }); 
 
-const contact=[
-  {
-    name: 'Radhika',
-    phone: '9898989898'
-  },
-  {
-    name: 'Vaishnavi',
-    phone: '7878787878'
-  }
-]
 
-app.get('/content', (req, res)=>{
-  res.json(contact)
-})
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
+});

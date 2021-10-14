@@ -20,7 +20,7 @@ function Content() {
     const response = useServerResponse(location);
     return (
         <LocationContext.Provider value={[location, setLocation]}>
-            CLIENT COMPONENT !!!
+            {/* CLIENT COMPONENT !!! */}
             {response.readRoot()}
         </LocationContext.Provider>
     );
