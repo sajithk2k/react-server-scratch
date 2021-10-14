@@ -1,5 +1,6 @@
 import {unstable_createRoot} from 'react-dom';
-import Root from './Root.client';
+import App from './App.client';
+// import './main.css'
 
 const root = unstable_createRoot(document.getElementById('root'));
-root.render(<Root/>);
+root.render(<App/>);

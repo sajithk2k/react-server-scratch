@@ -1,0 +1,399 @@
+{
+    "RESPONSE": {
+      "pageData": {
+        "pageContext": {
+          "faAvailable": true,
+          "imageUrl": "https://rukminim1.flixcart.com/image/{@width}/{@height}/kflftzk0-0/shirt/h/p/d/xl-hlsh010268-highlander-original-imafwyff8cwshksn.jpeg?q={@quality}",
+          "itemId": "ITMFDAAVFPGXEKYF",
+          "listingId": "LSTSHTFDA7MGZFDZ52ZFMNODN",
+          "multipleMediaPresent": true,
+          "pricing": {
+            "prices": [
+              {
+                "currency": "INR",
+                "decimalValue": "1249.00",
+                "name": "Maximum Retail Price",
+                "priceType": "MRP",
+                "strikeOff": true,
+                "value": 1249
+              },
+              {
+                "currency": "INR",
+                "decimalValue": "624.00",
+                "name": "Selling Price",
+                "priceType": "FSP",
+                "strikeOff": true,
+                "value": 624
+              }
+            ],
+            "totalDiscount": 50
+          },
+          "productId": "SHTFDA7MGZFDZ52Z",
+          "smartUrl": "https://dl.flipkart.com/dl/highlander-men-checkered-casual-multicolor-shirt/p/itmfdaavfpgxekyf?pid=SHTFDA7MGZFDZ52Z&cmpid=product.share.pp"
+        }
+      },
+      "slots": [
+        {
+          "slotType": "WIDGET",
+          "id": 5,
+          "parentId": 0,
+          "widget": {
+            "type": "MULTIMEDIA",
+            "viewType": "Carousal",
+            "data": {
+              "multimediaComponents": [
+                {
+                  "value": {
+                    "type": "MediaValue",
+                    "aspectRatio": "5:6",
+                    "contentType": "IMAGE",
+                    "source": "ORGANIC",
+                    "url": "https://rukminim1.flixcart.com/image/{@width}/{@height}/kflftzk0-0/shirt/h/p/d/xl-hlsh010268-highlander-original-imafwyff8cwshksn.jpeg?q={@quality}"
+                  }
+                },
+                {
+                  "value": {
+                    "type": "MediaValue",
+                    "aspectRatio": "5:6",
+                    "contentType": "IMAGE",
+                    "source": "ORGANIC",
+                    "url": "https://rukminim1.flixcart.com/image/{@width}/{@height}/k70spzk0/shirt/d/v/h/m-hlsh010268-highlander-original-imafpchwgg37nh6a.jpeg?q={@quality}"
+                  }
+                },
+                {
+                  "value": {
+                    "type": "MediaValue",
+                    "aspectRatio": "5:6",
+                    "contentType": "IMAGE",
+                    "source": "ORGANIC",
+                    "url": "https://rukminim1.flixcart.com/image/{@width}/{@height}/k70spzk0/shirt/d/v/h/m-hlsh010268-highlander-original-imafpchwkp5q9fba.jpeg?q={@quality}"
+                  }
+                },
+                {
+                  "value": {
+                    "type": "MediaValue",
+                    "aspectRatio": "5:6",
+                    "contentType": "IMAGE",
+                    "source": "ORGANIC",
+                    "url": "https://rukminim1.flixcart.com/image/{@width}/{@height}/k70spzk0/shirt/d/v/h/m-hlsh010268-highlander-original-imafpchw72tpjhc7.jpeg?q={@quality}"
+                  }
+                },
+                {
+                  "value": {
+                    "type": "MediaValue",
+                    "aspectRatio": "5:6",
+                    "contentType": "IMAGE",
+                    "source": "ORGANIC",
+                    "url": "https://rukminim1.flixcart.com/image/{@width}/{@height}/k70spzk0/shirt/d/v/h/m-hlsh010268-highlander-original-imafpchwbznhr8gz.jpeg?q={@quality}"
+                  }
+                },
+                {
+                  "value": {
+                    "type": "MediaValue",
+                    "aspectRatio": "5:6",
+                    "contentType": "IMAGE",
+                    "source": "ORGANIC",
+                    "url": "https://rukminim1.flixcart.com/image/{@width}/{@height}/k70spzk0/shirt/d/v/h/m-hlsh010268-highlander-original-imafpchwwdzhckgz.jpeg?q={@quality}"
+                  }
+                }
+              ],
+              "offerButton": null,
+              "productDetailsAnnouncement": {
+                "action": {
+                  "url": "/highlander-men-checkered-casual-multicolor-shirt/p/itmfdaavfpgxekyf/specifications?pid=SHTFDA7MGZFDZ52Z&marketplace=FLIPKART"
+                },
+                "metaData": null,
+                "tracking": {
+                  "contextType": "page",
+                  "announcement": "DETAILS_PAGE"
+                },
+                "trackingData": null,
+                "value": {
+                  "type": "AnnouncementValue",
+                  "title": "All Details"
+                }
+              },
+              "shareAction": null,
+              "singleAttributeSwatch": null,
+              "spotlight": null,
+              "trustMarkerCallout": null,
+              "tryTheShadeAction": null,
+              "virtualTryOnAction": null,
+              "wishlistAction": {
+                "action": {
+                  "params": {
+                    "valid": true,
+                    "productId": "SHTFDA7MGZFDZ52Z",
+                    "lid": "LSTSHTFDA7MGZFDZ52ZFMNODN"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "slotType": "WIDGET",
+          "id": 8,
+          "parentId": 0,
+          "widget": {
+            "type": "PRODUCT_PAGE_SUMMARY",
+            "viewType": "LIFESTYLE",
+            "data": {
+              "ratingsAndReviews": {
+                "value": {
+                  "type": "ReviewSummary",
+                  "rating": {
+                    "type": "RatingValue",
+                    "average": 4.2,
+                    "base": 5,
+                    "breakup": [
+                      85,
+                      64,
+                      179,
+                      431,
+                      931
+                    ],
+                    "count": 1690,
+                    "histogramBaseCount": 931,
+                    "ratingAdjective": "Very Good ",
+                    "reviewCount": 206
+                  },
+                  "reviewCount": 206
+                }
+              },
+              "titleComponent": {
+                "value": {
+                  "type": "ProductTitleValue",
+                  "newTitle": "Men Slim Fit Checkered Button Down Collar Casual Shirt",
+                  "superTitle": "HIGHLANDER",
+                  "title": "HIGHLANDER Men Checkered Casual Multicolor Shirt"
+                }
+              }
+            }
+          }
+        },
+        {
+          "slotType": "WIDGET",
+          "id": 36,
+          "parentId": 0,
+          "widget": {
+            "type": "PRODUCT_DETAILS",
+            "viewType": "SPEC_DETAILS",
+            "data": {
+              "listingManufacturerInfo": {
+                "value": {
+                  "type": "ListingManufacturerValue",
+                  "detailedComponents": [
+                    {
+                      "value": {
+                        "type": "DetailedComponent",
+                        "callouts": [
+                          "ABC Apparels PVT LTD. 113, Krishna reddy Ind Area, 7th Mile, Kudlu Gate, Hosur Road, Bangalore 560068"
+                        ],
+                        "title": "Manufacturer's Details"
+                      }
+                    },
+                    {
+                      "value": {
+                        "type": "DetailedComponent",
+                        "callouts": [
+                          "ABC Apparels PVT LTD. 113, Krishna reddy Ind Area, 7th Mile, Kudlu Gate, Hosur Road, Bangalore 560068"
+                        ],
+                        "title": "Importer's Details"
+                      }
+                    },
+                    {
+                      "value": {
+                        "type": "DetailedComponent",
+                        "callouts": [
+                          "ABC Apparels PVT LTD. 113, Krishna reddy Ind Area, 7th Mile, Kudlu Gate, Hosur Road, Bangalore 560068"
+                        ],
+                        "title": "Packer's Details"
+                      }
+                    }
+                  ]
+                }
+              },
+              "renderableComponent": {
+                "value": {
+                  "type": "ProductDetailValue",
+                  "collapsed": false,
+                  "details": "HIGHLANDER  Cotton Woven Slim Fit Printed BLACK/WHITE Shirt",
+                  "specification": [
+                    {
+                      "name": "Pack of",
+                      "values": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "name": "Fabric",
+                      "values": [
+                        "Cotton Blend"
+                      ]
+                    },
+                    {
+                      "name": "Sleeve",
+                      "values": [
+                        "Full Sleeve"
+                      ]
+                    },
+                    {
+                      "name": "Pattern",
+                      "values": [
+                        "Checkered"
+                      ]
+                    },
+                    {
+                      "name": "Collar",
+                      "values": [
+                        "Button Down"
+                      ]
+                    },
+                    {
+                      "name": "Color",
+                      "values": [
+                        "Multicolor"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "header": {
+              "value": {
+                "type": "HeaderValue",
+                "titleValue": {
+                  "type": "TitleValue",
+                  "text": "Product Details"
+                }
+              }
+            },
+            "footer": {
+              "value": {
+                "type": "FooterValue",
+                "titleValue": {
+                  "type": "TitleValue",
+                  "text": "All Details"
+                }
+              }
+            }
+          }
+        },
+        {
+          "slotType": "WIDGET",
+          "id": 32,
+          "parentId": 0,
+          "widget": {
+            "type": "BANNER",
+            "viewType": "SOLO_VIEW",
+            "data": {
+              "renderableComponents": [
+                {
+                  "value": {
+                    "type": "ImageValue",
+                    "dynamicImageUrl": "https://rukminim1.flixcart.com/flap/{@width}/{@height}/image/2e02ce7a53e792ba.jpg?q={@quality}"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "slotType": "WIDGET",
+          "id": 41,
+          "parentId": 0,
+          "widget": {
+            "type": "RATING",
+            "viewType": "RATING_ADJECTIVE_DEFAULT",
+            "data": {
+              "header": {
+                "value": {
+                  "type": "HeaderValue",
+                  "titleValue": {
+                    "type": "TitleValue",
+                    "text": "What our customers felt:"
+                  }
+                }
+              },
+              "rating": {
+                "value": {
+                  "type": "UgcRatingValue",
+                  "average": 4.218343257904053,
+                  "base": 5,
+                  "baseText": "Out of 5",
+                  "histogram": [
+                    85,
+                    64,
+                    179,
+                    431,
+                    931
+                  ],
+                  "histogramBaseCount": 931,
+                  "ratingAdjective": "Very Good ",
+                  "ratingCount": 1690,
+                  "reviewCount": 206,
+                  "viewType": "OVERALL_RATING_VIEW"
+                }
+              },
+              "reviewButton": {
+                "action": {
+                  "url": "/highlander-men-checkered-casual-multicolor-shirt/write-review/itmfdaavfpgxekyf?pid=SHTFDA7MGZFDZ52Z&source=pp"
+                },
+                "value": {
+                  "type": "ButtonValue",
+                  "title": "Rate Product"
+                }
+              }
+            },
+            "header": {
+              "value": {
+                "type": "HeaderValue",
+                "titleValue": {
+                  "type": "TitleValue",
+                  "text": "Ratings & Reviews"
+                }
+              }
+            }
+          }
+        },
+        {
+          "slotType": "WIDGET",
+          "id": 47,
+          "parentId": 0,
+          "layoutParams": {
+            "boxShadow": "rgba(0, 0, 0, 0.1) 0px 1px 6px 0px",
+            "margin": "0,0,0,8"
+          },
+          "widget": {
+            "type": "SELLER_V2",
+            "viewType": "MIN_INFO",
+            "data": {
+              "SellerMetaValue": {
+                "value": {
+                  "type": "SellerMetaValue",
+                  "name": "Wizrob Fashion"
+                }
+              },
+              "rating": {
+                "value": {
+                  "type": "RatingValue",
+                  "average": 4.2,
+                  "base": 5
+                }
+              }
+            },
+            "footer": {
+              "value": {
+                "titleValue": {
+                  "type": "TitleValue",
+                  "text": "All 2 sellers,Starting from ₹562"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "STATUS_CODE": 200
+  }

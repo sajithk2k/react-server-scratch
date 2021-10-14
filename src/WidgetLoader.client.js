@@ -1,49 +1,18 @@
-import React from 'react'
-import {fetch} from 'react-fetch'
-import WidgetLoader from './WidgetLoader.client';
-// import Header from './header/Header.server';
+import React,{useState,useEffect, useRef, useMemo} from "react";
+import Components from "../componentIndex";
+import Loader from "./shell/Loader";
+import {useLocation} from './LocationContext.client';
 
-function App(props) {
-    const data = fetch(`http://localhost:3000/api/${props.page}/${props.pageNo}`).json()
-    let pagePriceDetails
-    if(data['priceData'])
-       pagePriceDetails = data["priceData"]
-    const slots = data['slots']
-    const hasMorePages = data['hasMorePages']
-
-    return (
-        <>
-            {/* <Header/> */}
-            <WidgetLoader hasMorePages={hasMorePages} slotData = {slots} priceData ={pagePriceDetails} />
-        </>
+    
+const WidgetLoader = (props) => {
+    return(
+        <h1>From Widget Loader</h1>
     )
-}
-
-export default App
-
-// const WidgetLoader = (props) => {
-//   // console.log(props.slotData);
-//   // console.log(props.priceData);
+    }
+//     const [, setLocation] = useLocation();
 //     const pageBreakRef = useRef(null);
-//     const [slots, setSlots] = useState([])
-//     const [pagePriceDetails, setPagePriceDetails] = useState({})
-//     const [pageNo, setPageNo] = useState(1)
-//     const [hasMorePages, setHasMorePages] = useState(false)
 //     const [isVisible, setIsVisible] = useState(false)
 //     const [isLoading, setIsLoading] = useState(false)
-
-//     // window.addEventListener('scroll', function() {
-//     //   var el = document.querySelector('.page-break');
-
-//     //   if(el){
-//     //     var position = el.getBoundingClientRect();
-//     //     if(position.top >= 0 && position.bottom-50 <= window.innerHeight) {
-//     //       setIsVisible(true)
-//     //     }
-//     //     else
-//     //       setIsVisible(false)
-//     //   }
-//     // })
 
 //     const handleIntersect = entries => {
 //         const[entry] = entries;
@@ -68,10 +37,12 @@ export default App
 //     },[pageBreakRef.current,options])
 
 //     useEffect(()=>{
-//       if(hasMorePages && isVisible){
-//         setPageNo(p=>p+1)
+//       if(props.hasMorePages && isVisible){
+//         setLocation((loc) => ({
+//             pageNo: loc
+//         }));
 //       }
-//     }, [hasMorePages, isVisible])
+//     }, [props.hasMorePages, isVisible])
 
 //     useEffect(()=>
 //     {
@@ -89,6 +60,8 @@ export default App
 //     }
 //     , [pageNo])
 
+
+
 //   if (slots.length === 0) return (
 //     <div style={{marginTop:'40vh'}}>
 //       <Loader isBottom={false}/>
@@ -97,8 +70,7 @@ export default App
 
 //   return (
 //     <>
-//         {slots.map((slot, i) => {
-//           //   console.log(slot.widget.type);
+//         {props.slots.map((slot, i) => {
 //           let WidgetName = Components[slot.widget.type];
 //           return (
 //             <div key={i}>
@@ -107,7 +79,7 @@ export default App
 //                   <WidgetName widgetData={slot} />
 //                 )}
 //               {slot.widget.type === "PRODUCT_PAGE_SUMMARY" && (
-//                 <WidgetName widgetData={slot} priceDetails={pagePriceDetails} />
+//                 <WidgetName widgetData={slot} priceDetails={props.pagePriceDetails} />
 //               )}
 //             </div>
 //           );
@@ -118,4 +90,4 @@ export default App
 //   );
 // };
 
-// export default WidgetLoader;
+export default WidgetLoader;
